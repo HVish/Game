@@ -27,6 +27,7 @@ int main()
 	line(xmax1,0,xmax1,ymax1);         //left line.
 	line(xmax2,0,xmax2,ymax2);         //right line.
 
+
 	int key,temp=0,x,y,cl;
 
 	while(key!=ARROW_DOWN)
@@ -42,20 +43,29 @@ int main()
 	}
 
 	 if(temp==-1)
-	 {
-	   //	setbkcolor(GREEN);
+	{
+	cleardevice();
+	line(xmax1,0,xmax1,ymax1);         //left line.
+	line(xmax2,0,xmax2,ymax2);         //right line.
+		setbkcolor(RED);
 		k.barleft();
 	 }
 
 	 if(temp==0)
 	 {
-	   //	setbkcolor(YELLOW);
+	 cleardevice();
+		line(xmax1,0,xmax1,ymax1);         //left line.
+	line(xmax2,0,xmax2,ymax2);         //right line.
+		setbkcolor(RED);
 		k.barcenter();
 	 }
 
 	 if(temp==1)
 	 {
-	   //	setbkcolor(RED);
+	 cleardevice();
+		line(xmax1,0,xmax1,ymax1);         //left line.
+	line(xmax2,0,xmax2,ymax2);         //right line.
+		setbkcolor(RED);
 		k.barright();
 	 }
 	}
